@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src &apos;self&apos; data: gap: https://ssl.gstatic.com &apos;unsafe-eval&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+            
+            <div id="devicereadyCordovaFile" class="blink">
+                <p class="event listening">cordova.file not ready</p>
+                <p class="event received">cordova.file ready</p>
+            </div>
+            
+            <div id="devicereadyFileSystemRequest" class="blink">
+                <p class="event listening">File system request</p>
+                <p class="event received">Got file system</p>
+            </div>
+            <div id="devicereadyFileEntryRequest" class="blink">
+                <p class="event listening">File request</p>
+                <p class="event received">Got file entry</p>
+            </div>
+            <div id="devicereadyFileWritingReading" class="blink">
+                <p class="event listening">Try write and read a file</p>
+                <p class="event received">File wrote and read</p>
+            </div>
+       
+            
+            <div id="requestFileSystemTest" class="blink">
+                <p class="event listening">requestFileSystem</p>
+                <p class="event received">requestFileSystem</p>
+            </div>
+            <div id="webkitRequestFileSystemTest" class="blink">
+                <p class="event listening">webkitRequestFileSystem</p>
+                <p class="event received">webkitRequestFileSystem</p>
+            </div>
+            <div id="resolveLocalFileSystemURLTest" class="blink">
+                <p class="event listening">resolveLocalFileSystemURL</p>
+                <p class="event received">resolveLocalFileSystemURL</p>
+            </div>
+            <div id="resolveLocalFileSystemURITest" class="blink">
+                <p class="event listening">resolveLocalFileSystemURI</p>
+                <p class="event received">resolveLocalFileSystemURI</p>
+            </div>
+            <div id="resolveLocalFileSystemTest" class="blink">
+                <p class="event listening">resolveLocalFileSystem</p>
+                <p class="event received">resolveLocalFileSystem</p>
+            </div>
+            <div id="requestLocalFileSystemTest" class="blink">
+                <p class="event listening">requestLocalFileSystem</p>
+                <p class="event received">requestLocalFileSystem</p>
+            </div>
+            
+            
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
